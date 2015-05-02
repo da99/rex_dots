@@ -7,9 +7,11 @@ Gem::Specification.new do |spec|
   spec.version       = `cat VERSION`
   spec.authors       = ["da99"]
   spec.email         = ["i-hate-spam-1234567@mailinator.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
+  spec.summary       = %q{ A ruby gem to help me create Regular Expressions. }
   spec.description   = %q{
-    TODO: Write a longer description. Optional.
+    A ruby gem to help me create Regular Expressions.
+    You won't use it because it's just one more
+    thing to learn.
   }
   spec.homepage      = "https://github.com/da99/rex_dots"
   spec.license       = "MIT"

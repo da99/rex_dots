@@ -1,7 +1,7 @@
 
 # Rex_Dots
 
-I have no idea.
+A ruby gem to help me create Regular Expressions.
 
 ## Installation
 
