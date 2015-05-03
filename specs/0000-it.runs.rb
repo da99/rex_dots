@@ -12,3 +12,13 @@ describe 'Rex_Dots' do
   end # === it
 
 end # === describe 'Rex_Dots'
+
+describe ':exp' do
+
+  it "creates a regular expression" do
+    r = Rex_Dots.exp(" (...) { (...) } ")
+    r.match "hello { hello }"
+    $1.should == 'hello'
+  end # === it
+
+end # === describe ':exp'

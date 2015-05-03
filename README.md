@@ -15,6 +15,4 @@ It's not ready yet.
 
 ```ruby
   Rex_Dots? " ... (...) { (...) } ", "hello ( a, b, c ) { hello }"
-  puts $1
-  puts $2
 ```
