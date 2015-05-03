@@ -3,10 +3,18 @@
 
 A ruby gem to help me create Regular Expressions.
 
+## Note:
+
+It's not ready yet.
+
 ## Installation
 
     gem 'rex_dots'
 
 ## Usage
 
-Not coming any time soon.
+```ruby
+  Rex_Dots? " ... (...) { (...) } ", "hello ( a, b, c ) { hello }"
+  puts $1
+  puts $2
+```
