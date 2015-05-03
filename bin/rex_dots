@@ -23,6 +23,8 @@ case "$action" in
     ;;  # === start
 
   "watch")
+    bin/rex_dots test "$@" || true
+
     echo "=== Watching: "
     inotifywait -q --exclude .git/ -e close_write,close -m -r .  | while read CHANGE
     do

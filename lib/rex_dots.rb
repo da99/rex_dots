@@ -5,7 +5,7 @@ end # === def Rex_Dots?
 
 class Rex_Dots
 
-  REX                 = /(\ {1,})|\(([^\)]+)\)|(.)/
+  REX                 = /(\ {1,})|\(([^\(\)]+)\)|(.)/
   REX_CACHE           = {}
   ZERO_OR_MORE_SPACES = /\ */
   ONE_OR_MORE_SPACES  = /\ +/
@@ -33,7 +33,7 @@ class Rex_Dots
 
           case key
           when '...'
-            /\ *([^\)]+?)\ */
+            /\ *(.+?)\ */
 
           when '_'
             i += 1
@@ -46,7 +46,7 @@ class Rex_Dots
           when 'white*'
             /([\ ]*)/
 
-          when 'white'
+          when 'white+'
             /([\ ]+)/
 
           when 'num'
